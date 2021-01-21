@@ -1,0 +1,17 @@
+{
+  "name": "rivhitjs",
+  "version": "1.0.0",
+  "description": "Process incoming excel reports and export Rivhit CSVs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Haran",
+  "license": "MIT",
+  "dependencies": {
+    "read-excel-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
+}
