@@ -1,5 +1,4 @@
-# rivhit
-Rivhit Data Processor
+# Rivhit Data Processor
 
 > Install dependencies
 
