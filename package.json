@@ -9,6 +9,7 @@
   "author": "Ben Haran",
   "license": "MIT",
   "dependencies": {
+    "encoding": "^0.1.13",
     "read-excel-file": "^5.0.0"
   },
   "devDependencies": {

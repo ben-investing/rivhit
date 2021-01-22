@@ -1,5 +1,6 @@
 const fs = require('fs');
 const readXlsxFile = require('read-excel-file/node');
+const encoding = require("encoding");
 
 const BLANK = '';
 const MENTOR_MAP_PATH = 'mentor-map';
@@ -102,7 +103,9 @@ const processFile = (filename, piraonDate) => {
 			.map(generateRow(piraonDate));
 
 		let fullFilePath = `${OUTPUT_FILE_PATH}${lastRowMonth}.csv`;
-		fs.writeFileSync(fullFilePath, result.map(row => row.join(',')).join('\n'));
+		let fileText = result.map(row => row.join(',')).join('\n');
+		let fileOutput = encoding.convert(fileText, "CP1255");
+		fs.writeFileSync(fullFilePath, fileOutput);
 
 		console.log(`
 
