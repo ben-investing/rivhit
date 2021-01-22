@@ -102,8 +102,7 @@ const processFile = (filename, piraonDate) => {
 			.map(generateRow(piraonDate));
 
 		let fullFilePath = `${OUTPUT_FILE_PATH}${lastRowMonth}.csv`;
-		fs.writeFileSync(fullFilePath,
-			'\ufeff' + result.map(row => row.join(',')).join('\n'));
+		fs.writeFileSync(fullFilePath, result.map(row => row.join(',')).join('\n'));
 
 		console.log(`
 
