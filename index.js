@@ -109,8 +109,8 @@ const processFile = (filename, piraonDate) => {
 
 Processing Completed Successfully
 		
-Output written to file: /output/${fullFilePath}`);
-		
+Output written to file: ${fullFilePath}`);
+
 		process.exit(0);
 	})
 }
